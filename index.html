@@ -5,14 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="title" content="EditBench: Evaluating LLM Abilities to Perform Real-World Instructed Code Edits">
+  <meta name="description" content="A benchmark for evaluating LLM code editing capabilities built on real-world edit contexts and instructions collected in-the-wild from 500 developers.">
+  <meta name="keywords" content="code editing, LLM benchmark, code generation, AI coding assistants, real-world evaluation, machine learning">
+  <meta name="author" content="Anonymous Authors">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
@@ -73,8 +69,7 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
 
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
+  <title>EditBench | Real-World Code Editing Benchmark</title>
   
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -186,53 +181,6 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
 
   <main id="main-content">
   <section class="hero">
@@ -240,31 +188,19 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">EditBench: Evaluating LLM Abilities to Perform Real-World Instructed Code Edits</h1>
             <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+              <span class="author-block">Anonymous Authors</span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Under review as a conference paper at ICLR 2026</span>
+            </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="edit-bench.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -273,20 +209,8 @@
                       </a>
                     </span>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/editbench/editbench" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -295,14 +219,13 @@
                   </a>
                 </span>
 
-                <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="heb-results.csv" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <i class="fas fa-table"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>Results</span>
                 </a>
               </span>
             </div>
@@ -314,159 +237,191 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- TLDR -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+      <h2 class="title is-3 has-text-centered">TL;DR</h2>
+      <div class="content has-text-justified" style="font-size: 1.1rem;">
+        <p>
+          <strong>EditBench</strong> is the first benchmark for evaluating LLM code editing capabilities built on <strong>real-world edit contexts and instructions</strong> collected in-the-wild. We gathered data from nearly 500 developers using a VS Code extension, creating 545 problems across 5 natural languages and 2 programming languages. EditBench tests models on diverse, context-dependent problems that require understanding user instructions, code context, highlighted code, and cursor position—reflecting how developers actually use AI coding assistants.
+        </p>
+      </div>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+<!-- End TLDR -->
 
-<!-- Paper abstract -->
+<!-- Key Takeaways -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
+        <h2 class="title is-3 has-text-centered">Key Takeaways</h2>
+        <div class="content">
+          <ul style="font-size: 1.05rem;">
+            <li><strong>Real-world data:</strong> EditBench is built from actual developer workflows, with user instructions and code contexts collected from 500 developers using our VS Code extension.</li>
+            <li><strong>Challenging benchmark:</strong> Only 3 out of 40 models achieve over 60% pass@1, with claude-sonnet-4 leading at 66.67%.</li>
+            <li><strong>Context matters:</strong> Model performance varies up to 11% depending on contextual information (highlighted code, cursor position), demonstrating the importance of realistic evaluation.</li>
+            <li><strong>Diverse problems:</strong> 545 problems spanning 5 natural languages (English, Spanish, Russian, Chinese, Portuguese), 2 programming languages (Python, JavaScript), and 4 edit categories (feature addition, modification, bug fixing, optimization).</li>
+            <li><strong>Model performance varies by task:</strong> Models excel at different problem categories—some are better at bug fixing (52.2% avg), while struggling with optimization (44.6% avg) and feature addition (39.6% avg).</li>
+            <li><strong>Weak correlation with existing benchmarks:</strong> EditBench shows only weak correlation with Aider Polyglot (r=0.24) and Chatbot Arena (r=0.11), suggesting it captures unique real-world editing challenges.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End key takeaways -->
+
+
+<!-- Leaderboard -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">EditBench Leaderboard</h2>
+      <p class="has-text-centered" style="margin-bottom: 2rem;">
+        Pass rates for 40 LLMs on EditBench (545 problems). Higher is better.
+      </p>
+      <div class="table-container">
+        <table class="table is-striped is-hoverable is-fullwidth" style="margin: 0 auto;">
+          <thead>
+            <tr style="background-color: #2563EB; color: white;">
+              <th style="color: white;">Rank</th>
+              <th style="color: white;">Model</th>
+              <th style="color: white;">Pass Rate (%)</th>
+              <th style="color: white;">Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>claude-sonnet-4</td><td><strong>66.67</strong></td><td><span class="tag is-danger">Closed</span></td></tr>
+            <tr><td>2</td><td>gpt-o3-mini</td><td>63.89</td><td><span class="tag is-danger">Closed</span></td></tr>
+            <tr><td>3</td><td>claude-3.5-sonnet</td><td>62.04</td><td><span class="tag is-danger">Closed</span></td></tr>
+            <tr><td>4</td><td>claude-3-7-sonnet</td><td>59.48</td><td><span class="tag is-danger">Closed</span></td></tr>
+            <tr><td>5</td><td>deepseek-chat-v3.1</td><td>58.88</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>6</td><td>gpt-o4-mini-high</td><td>58.33</td><td><span class="tag is-danger">Closed</span></td></tr>
+            <tr><td>7</td><td>gpt-o4-mini</td><td>57.55</td><td><span class="tag is-danger">Closed</span></td></tr>
+            <tr><td>8</td><td>kimi-k2-0905</td><td>57.41</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>9</td><td>qwen3-coder-flash</td><td>56.48</td><td><span class="tag is-danger">Closed</span></td></tr>
+            <tr><td>10</td><td>gemini-2.5-pro</td><td>55.66</td><td><span class="tag is-danger">Closed</span></td></tr>
+            <tr><td>11</td><td>gpt-5-high</td><td>55.56</td><td><span class="tag is-danger">Closed</span></td></tr>
+            <tr><td>12</td><td>llama-3.3-70b-instruct</td><td>54.72</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>13</td><td>qwen-2.5-coder-32b-instruct</td><td>53.77</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>14</td><td>qwen-2.5-72b-instruct</td><td>53.70</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>15</td><td>grok-code-fast-1</td><td>52.83</td><td><span class="tag is-danger">Closed</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="has-text-centered" style="margin-top: 1.5rem; font-size: 0.9rem; color: #666;">
+        Full results for all 40 models available in <a href="heb-results.csv" style="color: #2563EB;">heb-results.csv</a>
+      </p>
+    </div>
+  </div>
+</section>
+<!-- End leaderboard -->
+
+
+
+
+<!-- What is EditBench -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">What is EditBench?</h2>
+      <div class="content has-text-justified" style="font-size: 1.05rem;">
+        <p>
+          <strong>EditBench</strong> is a benchmark for evaluating LLM code editing capabilities built on real-world edit contexts and instructions. Unlike existing benchmarks that rely on synthetic or educational-style problems, EditBench is constructed from actual developer workflows.
+        </p>
+
+        <h3 class="title is-5" style="margin-top: 1.5rem; color: #2563EB;">Data Collection</h3>
+        <p>
+          We developed an open-source VS Code extension that mimics existing instructed code editing tools like GitHub Copilot and Cursor. Nearly 500 developers used this extension in their daily coding workflows, allowing us to collect realistic user instructions, code contexts, highlighted code segments, and cursor positions.
+        </p>
+
+        <h3 class="title is-5" style="margin-top: 1.5rem; color: #2563EB;">Key Features</h3>
+        <ul>
+          <li><strong>Context-dependent problems:</strong> Models must understand user instructions, code context, highlighted code, and cursor position—just like in real AI coding assistants.</li>
+          <li><strong>Diverse instructions:</strong> User instructions range from brief commands like "fix this" to detailed natural language descriptions or even raw error traces.</li>
+          <li><strong>Real-world complexity:</strong> Problems span 74 unique Python libraries and various application domains (frontend/backend, ML, algorithms).</li>
+          <li><strong>Multilingual:</strong> 5 natural languages (English, Spanish, Russian, Chinese, Portuguese) and 2 programming languages (Python, JavaScript).</li>
+          <li><strong>Multiple task categories:</strong> Feature addition (43%), feature modification (27%), bug fixing (22%), and code optimization (8%).</li>
+        </ul>
+
+        <h3 class="title is-5" style="margin-top: 1.5rem; color: #2563EB;">Benchmark Statistics</h3>
+        <p>
+          EditBench consists of <strong>545 problems</strong> with human-written test harnesses. We assembled a team of 5 experienced programmers to create test cases that adhere to user intent and are generalizable to different implementations. Each problem underwent a two-stage review process to ensure quality.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End What is EditBench -->
+
+
+<!-- How to Evaluate -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">How can I evaluate on EditBench?</h2>
+      <div class="content" style="font-size: 1.05rem;">
+        <p class="has-text-justified">
+          We provide a complete evaluation framework for running your models on EditBench. Follow these steps to get started:
+        </p>
+
+        <div class="box" style="background-color: #F3F4F6; border-left: 4px solid #2563EB; margin-top: 1.5rem;">
+          <h4 class="title is-5" style="margin-bottom: 1rem; color: #2563EB;">
+            <span class="icon"><i class="fas fa-download"></i></span>
+            Step 1: Clone the Repository
+          </h4>
+          <pre style="background-color: #1F2937; color: #F3F4F6; padding: 1rem; border-radius: 4px;"><code>git clone https://github.com/editbench/editbench.git
+cd editbench</code></pre>
+        </div>
+
+        <div class="box" style="background-color: #F3F4F6; border-left: 4px solid #10B981; margin-top: 1.5rem;">
+          <h4 class="title is-5" style="margin-bottom: 1rem; color: #10B981;">
+            <span class="icon"><i class="fas fa-cog"></i></span>
+            Step 2: Install Dependencies
+          </h4>
+          <pre style="background-color: #1F2937; color: #F3F4F6; padding: 1rem; border-radius: 4px;"><code>pip install -r requirements.txt</code></pre>
+        </div>
+
+        <div class="box" style="background-color: #F3F4F6; border-left: 4px solid #F59E0B; margin-top: 1.5rem;">
+          <h4 class="title is-5" style="margin-bottom: 1rem; color: #F59E0B;">
+            <span class="icon"><i class="fas fa-play"></i></span>
+            Step 3: Run Evaluation
+          </h4>
+          <pre style="background-color: #1F2937; color: #F3F4F6; padding: 1rem; border-radius: 4px;"><code>python evaluate.py --model YOUR_MODEL_NAME</code></pre>
+          <p style="margin-top: 1rem; font-size: 0.95rem;">
+            The evaluation script will automatically:
+          </p>
+          <ul style="margin-left: 1.5rem; font-size: 0.95rem;">
+            <li>Load the 545 EditBench problems</li>
+            <li>Generate code edits using your model</li>
+            <li>Run test harnesses in isolated Docker containers</li>
+            <li>Compute pass@1 metrics and save results</li>
+          </ul>
+        </div>
+
+        <div class="box" style="background-color: #EEF2FF; border-left: 4px solid #8B5CF6; margin-top: 1.5rem;">
+          <h4 class="title is-5" style="margin-bottom: 1rem; color: #8B5CF6;">
+            <span class="icon"><i class="fas fa-book"></i></span>
+            Documentation & Support
+          </h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            For detailed documentation, custom model integration, and troubleshooting, please see our <a href="https://github.com/editbench/editbench" style="color: #2563EB;"><strong>GitHub repository</strong></a>.
+          </p>
+          <p style="margin-top: 0.5rem;">
+            To submit your results to the leaderboard, please open a pull request with your model's performance metrics.
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+<!-- End How to Evaluate -->
 
 
 
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
 
 
 
@@ -474,18 +429,17 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
+        <h2 class="title">Citation</h2>
         <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
           <i class="fas fa-copy"></i>
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+      <pre id="bibtex-code"><code>@article{editbench2026,
+  title={EditBench: Evaluating LLM Abilities to Perform Real-World Instructed Code Edits},
+  author={Anonymous Authors},
+  journal={Under review as a conference paper at ICLR 2026},
+  year={2026}
 }</code></pre>
     </div>
 </section>
