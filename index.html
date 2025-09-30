@@ -195,7 +195,9 @@
               <span class="author-block">
                 <a href="#" target="_blank">Valerie Chen</a><sup>*</sup>,</span>
               <span class="author-block">
-                <a href="#" target="_blank">Ryan Shar</a><sup>*</sup>,</span>
+                <a href="#" target="_blank">Ryan Shar</a><sup>*</sup></span>
+            </div>
+            <div class="is-size-6 publication-authors">
               <span class="author-block">
                 <a href="#" target="_blank">Aditya Mittal</a>,</span>
               <span class="author-block">
@@ -214,9 +216,8 @@
                 <a href="#" target="_blank">Chris Donahue</a></span>
             </div>
 
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">Under review as a conference paper at ICLR 2026</span>
-              <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution</small></span>
+            <div class="is-size-6 publication-authors">
+              <span class="eql-cntrb"><small><sup>*</sup>Equal Contribution</small></span>
             </div>
 
                   <div class="column has-text-centered">
@@ -287,7 +288,6 @@
             <li><strong>Context matters:</strong> Model performance varies up to 11% depending on contextual information (highlighted code, cursor position), demonstrating the importance of realistic evaluation.</li>
             <li><strong>Diverse problems:</strong> 545 problems spanning 5 natural languages (English, Spanish, Russian, Chinese, Portuguese), 2 programming languages (Python, JavaScript), and 4 edit categories (feature addition, modification, bug fixing, optimization).</li>
             <li><strong>Model performance varies by task:</strong> Models excel at different problem categories—some are better at bug fixing (52.2% avg), while struggling with optimization (44.6% avg) and feature addition (39.6% avg).</li>
-            <li><strong>Weak correlation with existing benchmarks:</strong> EDIT-bench shows only weak correlation with Aider Polyglot (r=0.24) and Chatbot Arena (r=0.11), suggesting it captures unique real-world editing challenges.</li>
           </ul>
         </div>
       </div>
@@ -414,54 +414,34 @@
       <h2 class="title is-3 has-text-centered">How can I evaluate on EDIT-bench?</h2>
       <div class="content" style="font-size: 1.05rem;">
         <p class="has-text-justified">
-          We provide a complete evaluation framework for running your models on EDIT-bench. Follow these steps to get started:
+          To evaluate your model on EDIT-bench, please visit our GitHub repository and follow the detailed instructions in the README:
         </p>
 
-        <div class="box" style="background-color: #F3F4F6; border-left: 4px solid #2563EB; margin-top: 1.5rem;">
-          <h4 class="title is-5" style="margin-bottom: 1rem; color: #2563EB;">
-            <span class="icon"><i class="fas fa-download"></i></span>
-            Step 1: Clone the Repository
+        <div class="box" style="background-color: #F3F4F6; border-left: 4px solid #2563EB; margin-top: 1.5rem; text-align: center;">
+          <h4 class="title is-4" style="margin-bottom: 1.5rem; color: #2563EB;">
+            <span class="icon"><i class="fab fa-github"></i></span>
+            Get Started on GitHub
           </h4>
-          <pre style="background-color: #1F2937; color: #F3F4F6; padding: 1rem; border-radius: 4px;"><code>git clone https://github.com/editbench/editbench.git
-cd editbench</code></pre>
-        </div>
-
-        <div class="box" style="background-color: #F3F4F6; border-left: 4px solid #10B981; margin-top: 1.5rem;">
-          <h4 class="title is-5" style="margin-bottom: 1rem; color: #10B981;">
-            <span class="icon"><i class="fas fa-cog"></i></span>
-            Step 2: Install Dependencies
-          </h4>
-          <pre style="background-color: #1F2937; color: #F3F4F6; padding: 1rem; border-radius: 4px;"><code>pip install -r requirements.txt</code></pre>
-        </div>
-
-        <div class="box" style="background-color: #F3F4F6; border-left: 4px solid #F59E0B; margin-top: 1.5rem;">
-          <h4 class="title is-5" style="margin-bottom: 1rem; color: #F59E0B;">
-            <span class="icon"><i class="fas fa-play"></i></span>
-            Step 3: Run Evaluation
-          </h4>
-          <pre style="background-color: #1F2937; color: #F3F4F6; padding: 1rem; border-radius: 4px;"><code>python evaluate.py --model YOUR_MODEL_NAME</code></pre>
-          <p style="margin-top: 1rem; font-size: 0.95rem;">
-            The evaluation script will automatically:
+          <a href="https://github.com/editbench/editbench" target="_blank" class="button is-large" style="background-color: #2563EB; color: white; font-weight: 600; padding: 1.5rem 3rem; border-radius: 8px;">
+            <span class="icon is-medium">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>View Repository & README</span>
+          </a>
+          <p style="margin-top: 1.5rem; font-size: 0.95rem; color: #666;">
+            The README includes complete setup instructions, evaluation scripts, and submission guidelines.
           </p>
-          <ul style="margin-left: 1.5rem; font-size: 0.95rem;">
-            <li>Load the 545 EDIT-bench problems</li>
-            <li>Generate code edits using your model</li>
-            <li>Run test harnesses in isolated Docker containers</li>
-            <li>Compute pass@1 metrics and save results</li>
+        </div>
+
+        <div class="content" style="margin-top: 2rem;">
+          <h4 class="title is-5" style="color: #1F2937;">What you'll find in the repository:</h4>
+          <ul style="font-size: 1rem;">
+            <li><strong>Complete benchmark dataset:</strong> All 545 EDIT-bench problems with test harnesses</li>
+            <li><strong>Evaluation scripts:</strong> Ready-to-use code for running your models</li>
+            <li><strong>Docker setup:</strong> Isolated testing environment configuration</li>
+            <li><strong>Submission guidelines:</strong> Instructions for adding your results to the leaderboard</li>
+            <li><strong>Documentation:</strong> Detailed guides for custom model integration</li>
           </ul>
-        </div>
-
-        <div class="box" style="background-color: #EEF2FF; border-left: 4px solid #8B5CF6; margin-top: 1.5rem;">
-          <h4 class="title is-5" style="margin-bottom: 1rem; color: #8B5CF6;">
-            <span class="icon"><i class="fas fa-book"></i></span>
-            Documentation & Support
-          </h4>
-          <p>
-            For detailed documentation, custom model integration, and troubleshooting, please see our <a href="https://github.com/editbench/editbench" style="color: #2563EB;"><strong>GitHub repository</strong></a>.
-          </p>
-          <p style="margin-top: 0.5rem;">
-            To submit your results to the leaderboard, please open a pull request with your model's performance metrics.
-          </p>
         </div>
       </div>
     </div>
