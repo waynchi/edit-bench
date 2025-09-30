@@ -14,46 +14,44 @@
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:site_name" content="Carnegie Mellon University">
+  <meta property="og:title" content="EDIT-bench: Evaluating LLM Abilities to Perform Real-World Instructed Code Edits">
+  <meta property="og:description" content="A benchmark for evaluating LLM code editing capabilities built on real-world edit contexts and instructions collected in-the-wild from 500 developers. EDIT stands for Evaluation of Developer Instructed Tasks.">
+  <meta property="og:url" content="https://editbench.github.io">
+  <meta property="og:image" content="https://editbench.github.io/editbench-icon.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="og:image:alt" content="EDIT-bench - Real-World Code Editing Benchmark">
+  <meta property="article:published_time" content="2026-01-01T00:00:00.000Z">
+  <meta property="article:author" content="Wayne Chi">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="article:tag" content="code editing">
+  <meta property="article:tag" content="LLM benchmark">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:site" content="@CarnegieMellon">
+  <meta name="twitter:creator" content="@CarnegieMellon">
+  <meta name="twitter:title" content="EDIT-bench: Evaluating LLM Abilities to Perform Real-World Instructed Code Edits">
+  <meta name="twitter:description" content="A benchmark for evaluating LLM code editing capabilities built on real-world edit contexts and instructions collected in-the-wild from 500 developers. EDIT stands for Evaluation of Developer Instructed Tasks.">
+  <meta name="twitter:image" content="https://editbench.github.io/editbench-icon.png">
+  <meta name="twitter:image:alt" content="EDIT-bench - Real-World Code Editing Benchmark">
 
   <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+  <meta name="citation_title" content="EDIT-bench: Evaluating LLM Abilities to Perform Real-World Instructed Code Edits">
+  <meta name="citation_author" content="Chi, Wayne">
+  <meta name="citation_author" content="Chen, Valerie">
+  <meta name="citation_author" content="Shar, Ryan">
+  <meta name="citation_author" content="Mittal, Aditya">
+  <meta name="citation_author" content="Liang, Jenny">
+  <meta name="citation_author" content="Chiang, Wei-Lin">
+  <meta name="citation_author" content="Angelopoulos, Anastasios Nikolas">
+  <meta name="citation_author" content="Stoica, Ion">
+  <meta name="citation_author" content="Neubig, Graham">
+  <meta name="citation_author" content="Talwalkar, Ameet">
+  <meta name="citation_author" content="Donahue, Chris">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_pdf_url" content="https://editbench.github.io/edit-bench.pdf">
   
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
@@ -72,8 +70,8 @@
   <title>EDIT-bench | Real-World Code Editing Benchmark</title>
   
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/png" href="editbench-icon.png">
+  <link rel="apple-touch-icon" href="editbench-icon.png">
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -109,66 +107,53 @@
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "EDIT-bench: Evaluating LLM Abilities to Perform Real-World Instructed Code Edits",
+    "description": "A benchmark for evaluating LLM code editing capabilities built on real-world edit contexts and instructions collected in-the-wild from 500 developers.",
     "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
+      {"@type": "Person", "name": "Wayne Chi", "affiliation": {"@type": "Organization", "name": "Carnegie Mellon University"}},
+      {"@type": "Person", "name": "Valerie Chen", "affiliation": {"@type": "Organization", "name": "Carnegie Mellon University"}},
+      {"@type": "Person", "name": "Ryan Shar", "affiliation": {"@type": "Organization", "name": "Carnegie Mellon University"}},
+      {"@type": "Person", "name": "Aditya Mittal", "affiliation": {"@type": "Organization", "name": "Carnegie Mellon University"}},
+      {"@type": "Person", "name": "Jenny Liang", "affiliation": {"@type": "Organization", "name": "Carnegie Mellon University"}},
+      {"@type": "Person", "name": "Wei-Lin Chiang", "affiliation": {"@type": "Organization", "name": "UC Berkeley"}},
+      {"@type": "Person", "name": "Anastasios Nikolas Angelopoulos", "affiliation": {"@type": "Organization", "name": "UC Berkeley"}},
+      {"@type": "Person", "name": "Ion Stoica", "affiliation": {"@type": "Organization", "name": "UC Berkeley"}},
+      {"@type": "Person", "name": "Graham Neubig", "affiliation": {"@type": "Organization", "name": "Carnegie Mellon University"}},
+      {"@type": "Person", "name": "Ameet Talwalkar", "affiliation": {"@type": "Organization", "name": "Carnegie Mellon University"}},
+      {"@type": "Person", "name": "Chris Donahue", "affiliation": {"@type": "Organization", "name": "Carnegie Mellon University"}}
     ],
-    "datePublished": "2024-01-01",
+    "datePublished": "2026-01-01",
     "publisher": {
       "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
+      "name": "Carnegie Mellon University"
     },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
+    "url": "https://editbench.github.io",
+    "image": "https://editbench.github.io/editbench-icon.png",
+    "keywords": ["code editing", "LLM benchmark", "code generation", "AI coding assistants", "real-world evaluation", "machine learning"],
+    "abstract": "Instructed code editing is becoming a widely used interaction mode in AI coding assistants. We introduce EDIT-bench, a benchmark for evaluating LLM code editing capabilities grounded in real-world usage with 545 problems collected from nearly 500 developers.",
     "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
       "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+      "@id": "https://editbench.github.io"
     },
     "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
+      {"@type": "Thing", "name": "Code Editing"},
+      {"@type": "Thing", "name": "LLM Evaluation"}
     ]
   }
   </script>
-  
+
   <!-- Website/Organization Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "name": "Carnegie Mellon University",
+    "url": "https://www.cmu.edu",
+    "logo": "https://editbench.github.io/editbench-icon.png",
     "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
+      "https://twitter.com/CarnegieMellon",
+      "https://github.com/editbench"
     ]
   }
   </script>
@@ -243,7 +228,7 @@
                 </span>
 
                 <span class="link-block">
-                  <a href="heb-results.csv" target="_blank"
+                  <a href="results.csv" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fas fa-table"></i>
@@ -362,7 +347,7 @@
         </table>
       </div>
       <p class="has-text-centered" style="margin-top: 1.5rem; font-size: 0.9rem; color: #666;">
-        Full results available in <a href="heb-results.csv" style="color: #2563EB; font-weight: 600;">heb-results.csv</a>
+        Full results available in <a href="results.csv" style="color: #2563EB; font-weight: 600;">results.csv</a>
       </p>
     </div>
   </div>
