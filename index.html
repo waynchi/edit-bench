@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- Primary Meta Tags -->
-  <meta name="title" content="EditBench: Evaluating LLM Abilities to Perform Real-World Instructed Code Edits">
-  <meta name="description" content="A benchmark for evaluating LLM code editing capabilities built on real-world edit contexts and instructions collected in-the-wild from 500 developers.">
+  <meta name="title" content="EDIT-bench: Evaluating LLM Abilities to Perform Real-World Instructed Code Edits">
+  <meta name="description" content="A benchmark for evaluating LLM code editing capabilities built on real-world edit contexts and instructions collected in-the-wild from 500 developers. EDIT stands for Evaluation of Developer Instructed Tasks.">
   <meta name="keywords" content="code editing, LLM benchmark, code generation, AI coding assistants, real-world evaluation, machine learning">
-  <meta name="author" content="Anonymous Authors">
+  <meta name="author" content="Wayne Chi, Valerie Chen, Ryan Shar, Aditya Mittal, Jenny Liang, Wei-Lin Chiang, Anastasios Nikolas Angelopoulos, Ion Stoica, Graham Neubig, Ameet Talwalkar, Chris Donahue">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
@@ -69,7 +69,7 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
 
-  <title>EditBench | Real-World Code Editing Benchmark</title>
+  <title>EDIT-bench | Real-World Code Editing Benchmark</title>
   
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -188,13 +188,35 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">EditBench: Evaluating LLM Abilities to Perform Real-World Instructed Code Edits</h1>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">Anonymous Authors</span>
+            <h1 class="title is-1 publication-title">EDIT-bench: Evaluating LLM Abilities to Perform Real-World Instructed Code Edits</h1>
+            <div class="is-size-6 publication-authors">
+              <span class="author-block">
+                <a href="#" target="_blank">Wayne Chi</a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Valerie Chen</a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Ryan Shar</a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Aditya Mittal</a>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Jenny Liang</a>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Wei-Lin Chiang</a>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Anastasios Nikolas Angelopoulos</a>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Ion Stoica</a>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Graham Neubig</a>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Ameet Talwalkar</a>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Chris Donahue</a></span>
             </div>
 
             <div class="is-size-5 publication-authors">
               <span class="author-block">Under review as a conference paper at ICLR 2026</span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution</small></span>
             </div>
 
                   <div class="column has-text-centered">
@@ -244,7 +266,7 @@
       <h2 class="title is-3 has-text-centered">TL;DR</h2>
       <div class="content has-text-justified" style="font-size: 1.1rem;">
         <p>
-          <strong>EditBench</strong> is the first benchmark for evaluating LLM code editing capabilities built on <strong>real-world edit contexts and instructions</strong> collected in-the-wild. We gathered data from nearly 500 developers using a VS Code extension, creating 545 problems across 5 natural languages and 2 programming languages. EditBench tests models on diverse, context-dependent problems that require understanding user instructions, code context, highlighted code, and cursor position—reflecting how developers actually use AI coding assistants.
+          <strong>EDIT-bench</strong> (Evaluation of Developer Instructed Tasks) is the first benchmark for evaluating LLM code editing capabilities built on <strong>real-world edit contexts and instructions</strong> collected in-the-wild. We gathered data from nearly 500 developers using a VS Code extension, creating 545 problems across 5 natural languages and 2 programming languages. EDIT-bench tests models on diverse, context-dependent problems that require understanding user instructions, code context, highlighted code, and cursor position—reflecting how developers actually use AI coding assistants.
         </p>
       </div>
     </div>
@@ -260,12 +282,12 @@
         <h2 class="title is-3 has-text-centered">Key Takeaways</h2>
         <div class="content">
           <ul style="font-size: 1.05rem;">
-            <li><strong>Real-world data:</strong> EditBench is built from actual developer workflows, with user instructions and code contexts collected from 500 developers using our VS Code extension.</li>
+            <li><strong>Real-world data:</strong> EDIT-bench is built from actual developer workflows, with user instructions and code contexts collected from 500 developers using our VS Code extension.</li>
             <li><strong>Challenging benchmark:</strong> Only 3 out of 40 models achieve over 60% pass@1, with claude-sonnet-4 leading at 66.67%.</li>
             <li><strong>Context matters:</strong> Model performance varies up to 11% depending on contextual information (highlighted code, cursor position), demonstrating the importance of realistic evaluation.</li>
             <li><strong>Diverse problems:</strong> 545 problems spanning 5 natural languages (English, Spanish, Russian, Chinese, Portuguese), 2 programming languages (Python, JavaScript), and 4 edit categories (feature addition, modification, bug fixing, optimization).</li>
             <li><strong>Model performance varies by task:</strong> Models excel at different problem categories—some are better at bug fixing (52.2% avg), while struggling with optimization (44.6% avg) and feature addition (39.6% avg).</li>
-            <li><strong>Weak correlation with existing benchmarks:</strong> EditBench shows only weak correlation with Aider Polyglot (r=0.24) and Chatbot Arena (r=0.11), suggesting it captures unique real-world editing challenges.</li>
+            <li><strong>Weak correlation with existing benchmarks:</strong> EDIT-bench shows only weak correlation with Aider Polyglot (r=0.24) and Chatbot Arena (r=0.11), suggesting it captures unique real-world editing challenges.</li>
           </ul>
         </div>
       </div>
@@ -279,13 +301,13 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">EditBench Leaderboard</h2>
+      <h2 class="title is-3 has-text-centered">EDIT-bench Leaderboard</h2>
       <p class="has-text-centered" style="margin-bottom: 2rem;">
-        Pass rates for 40 LLMs on EditBench (545 problems). Higher is better.
+        Pass rates for 40 LLMs on EDIT-bench (545 problems). Higher is better.
       </p>
-      <div class="table-container">
-        <table class="table is-striped is-hoverable is-fullwidth" style="margin: 0 auto;">
-          <thead>
+      <div class="table-container" style="max-height: 600px; overflow-y: auto; border: 1px solid #e5e7eb; border-radius: 8px;">
+        <table class="table is-striped is-hoverable is-fullwidth" style="margin: 0;">
+          <thead style="position: sticky; top: 0; z-index: 10;">
             <tr style="background-color: #2563EB; color: white;">
               <th style="color: white;">Rank</th>
               <th style="color: white;">Model</th>
@@ -309,11 +331,38 @@
             <tr><td>13</td><td>qwen-2.5-coder-32b-instruct</td><td>53.77</td><td><span class="tag is-success">Open</span></td></tr>
             <tr><td>14</td><td>qwen-2.5-72b-instruct</td><td>53.70</td><td><span class="tag is-success">Open</span></td></tr>
             <tr><td>15</td><td>grok-code-fast-1</td><td>52.83</td><td><span class="tag is-danger">Closed</span></td></tr>
+            <tr><td>16</td><td>gemini-2.5-flash</td><td>52.78</td><td><span class="tag is-danger">Closed</span></td></tr>
+            <tr><td>17</td><td>gpt-4o</td><td>52.78</td><td><span class="tag is-danger">Closed</span></td></tr>
+            <tr><td>18</td><td>gpt-o3-mini-high</td><td>52.34</td><td><span class="tag is-danger">Closed</span></td></tr>
+            <tr><td>19</td><td>gpt-5</td><td>51.85</td><td><span class="tag is-danger">Closed</span></td></tr>
+            <tr><td>20</td><td>gpt-5-mini</td><td>51.85</td><td><span class="tag is-danger">Closed</span></td></tr>
+            <tr><td>21</td><td>llama-4-maverick</td><td>51.85</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>22</td><td>qwen3-coder</td><td>50.47</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>23</td><td>gpt-4o-mini</td><td>50.00</td><td><span class="tag is-danger">Closed</span></td></tr>
+            <tr><td>24</td><td>devstral-medium</td><td>50.00</td><td><span class="tag is-danger">Closed</span></td></tr>
+            <tr><td>25</td><td>qwen3-8b</td><td>49.07</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>26</td><td>devstral-small</td><td>48.15</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>27</td><td>gpt-oss-20b</td><td>48.15</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>28</td><td>gpt-5-nano</td><td>47.22</td><td><span class="tag is-danger">Closed</span></td></tr>
+            <tr><td>29</td><td>llama-4-scout</td><td>46.73</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>30</td><td>gemma-3-27b-it</td><td>46.50</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>31</td><td>qwen-qwen3-14b</td><td>46.30</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>32</td><td>qwen-qwen3-4b</td><td>45.79</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>33</td><td>mistralai-codestral-2508</td><td>44.44</td><td><span class="tag is-danger">Closed</span></td></tr>
+            <tr><td>34</td><td>qwen3-30b-a3b</td><td>43.52</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>35</td><td>mistral-small-3.2-24b-instruct</td><td>43.52</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>36</td><td>gpt-oss-120b</td><td>42.59</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>37</td><td>llama-3.1-405b-instruct</td><td>42.59</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>38</td><td>llama-3.3-8b-instruct</td><td>35.19</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>39</td><td>gemma-3n-e4b-it</td><td>32.08</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>40</td><td>glm-4.5</td><td>29.91</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>41</td><td>gemma-3-12b-it</td><td>24.30</td><td><span class="tag is-success">Open</span></td></tr>
+            <tr><td>42</td><td>deepseek-r1-0528</td><td>23.36</td><td><span class="tag is-success">Open</span></td></tr>
           </tbody>
         </table>
       </div>
       <p class="has-text-centered" style="margin-top: 1.5rem; font-size: 0.9rem; color: #666;">
-        Full results for all 40 models available in <a href="heb-results.csv" style="color: #2563EB;">heb-results.csv</a>
+        Full results available in <a href="heb-results.csv" style="color: #2563EB; font-weight: 600;">heb-results.csv</a>
       </p>
     </div>
   </div>
@@ -323,14 +372,14 @@
 
 
 
-<!-- What is EditBench -->
+<!-- What is EDIT-bench -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">What is EditBench?</h2>
+      <h2 class="title is-3 has-text-centered">What is EDIT-bench?</h2>
       <div class="content has-text-justified" style="font-size: 1.05rem;">
         <p>
-          <strong>EditBench</strong> is a benchmark for evaluating LLM code editing capabilities built on real-world edit contexts and instructions. Unlike existing benchmarks that rely on synthetic or educational-style problems, EditBench is constructed from actual developer workflows.
+          <strong>EDIT-bench</strong> (Evaluation of Developer Instructed Tasks) is a benchmark for evaluating LLM code editing capabilities built on real-world edit contexts and instructions. Unlike existing benchmarks that rely on synthetic or educational-style problems, EDIT-bench is constructed from actual developer workflows.
         </p>
 
         <h3 class="title is-5" style="margin-top: 1.5rem; color: #2563EB;">Data Collection</h3>
@@ -349,23 +398,23 @@
 
         <h3 class="title is-5" style="margin-top: 1.5rem; color: #2563EB;">Benchmark Statistics</h3>
         <p>
-          EditBench consists of <strong>545 problems</strong> with human-written test harnesses. We assembled a team of 5 experienced programmers to create test cases that adhere to user intent and are generalizable to different implementations. Each problem underwent a two-stage review process to ensure quality.
+          EDIT-bench consists of <strong>545 problems</strong> with human-written test harnesses. We assembled a team of 5 experienced programmers to create test cases that adhere to user intent and are generalizable to different implementations. Each problem underwent a two-stage review process to ensure quality.
         </p>
       </div>
     </div>
   </div>
 </section>
-<!-- End What is EditBench -->
+<!-- End What is EDIT-bench -->
 
 
 <!-- How to Evaluate -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">How can I evaluate on EditBench?</h2>
+      <h2 class="title is-3 has-text-centered">How can I evaluate on EDIT-bench?</h2>
       <div class="content" style="font-size: 1.05rem;">
         <p class="has-text-justified">
-          We provide a complete evaluation framework for running your models on EditBench. Follow these steps to get started:
+          We provide a complete evaluation framework for running your models on EDIT-bench. Follow these steps to get started:
         </p>
 
         <div class="box" style="background-color: #F3F4F6; border-left: 4px solid #2563EB; margin-top: 1.5rem;">
@@ -395,7 +444,7 @@ cd editbench</code></pre>
             The evaluation script will automatically:
           </p>
           <ul style="margin-left: 1.5rem; font-size: 0.95rem;">
-            <li>Load the 545 EditBench problems</li>
+            <li>Load the 545 EDIT-bench problems</li>
             <li>Generate code edits using your model</li>
             <li>Run test harnesses in isolated Docker containers</li>
             <li>Compute pass@1 metrics and save results</li>
@@ -436,8 +485,8 @@ cd editbench</code></pre>
         </button>
       </div>
       <pre id="bibtex-code"><code>@article{editbench2026,
-  title={EditBench: Evaluating LLM Abilities to Perform Real-World Instructed Code Edits},
-  author={Anonymous Authors},
+  title={EDIT-bench: Evaluating LLM Abilities to Perform Real-World Instructed Code Edits},
+  author={Wayne Chi and Valerie Chen and Ryan Shar and Aditya Mittal and Jenny Liang and Wei-Lin Chiang and Anastasios Nikolas Angelopoulos and Ion Stoica and Graham Neubig and Ameet Talwalkar and Chris Donahue},
   journal={Under review as a conference paper at ICLR 2026},
   year={2026}
 }</code></pre>
