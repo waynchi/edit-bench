@@ -130,7 +130,7 @@
     "url": "https://editbench.github.io",
     "image": "https://editbench.github.io/editbench-icon.png",
     "keywords": ["code editing", "LLM benchmark", "code generation", "AI coding assistants", "real-world evaluation", "machine learning"],
-    "abstract": "Instructed code editing is becoming a widely used interaction mode in AI coding assistants. We introduce EDIT-bench, a benchmark for evaluating LLM code editing capabilities grounded in real-world usage with 545 problems collected from nearly 500 developers.",
+    "abstract": "Instructed code editing is becoming a widely used interaction mode in AI coding assistants. We introduce EDIT-bench, a benchmark for evaluating LLM code editing capabilities grounded in real-world usage with 540 problems collected from nearly 500 developers.",
     "isAccessibleForFree": true,
     "mainEntity": {
       "@type": "WebPage",
@@ -174,7 +174,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1rem;">
-              <img src="editbench-icon.png" alt="EDIT-bench Logo" style="height: 80px; width: 80px;">
+              <img src="editbench-icon.png" alt="EDIT-bench Logo" style="height: 150px; width: 150px;">
               <h1 class="title is-1 publication-title" style="margin-bottom: 0;">EDIT-bench: Evaluating LLM Abilities to Perform Real-World Instructed Code Edits</h1>
             </div>
             <div class="is-size-6 publication-authors">
@@ -214,7 +214,6 @@
               <span class="author-block"><sup>2</sup>UC Berkeley</span>
             </div>
 
-                  <div class="column has-text-centered">
                     <div class="publication-links">
                       <span class="link-block">
                         <a href="https://arxiv.org/abs/2511.04486" target="_blank"
@@ -250,7 +249,6 @@
         </div>
       </div>
     </div>
-  </div>
 </section>
 
 
@@ -261,7 +259,7 @@
       <h2 class="title is-3 has-text-centered">TL;DR</h2>
       <div class="content has-text-justified" style="font-size: 1.1rem;">
         <p>
-          <strong>EDIT-bench</strong> (Evaluation of Developer Instructed Tasks) is the first benchmark for evaluating LLM code editing capabilities built on <strong>real-world edit contexts and instructions</strong> collected in-the-wild. We gathered data from nearly 500 developers using a VS Code extension, creating 545 problems across 5 natural languages and 2 programming languages. EDIT-bench tests models on diverse, context-dependent problems that require understanding user instructions, code context, highlighted code, and cursor position—reflecting how developers actually use AI coding assistants.
+          <strong>EDIT-bench</strong> (Evaluation of Developer Instructed Tasks) is the first benchmark for evaluating LLM code editing capabilities built on <strong>real-world edit contexts and instructions</strong> collected in-the-wild. We gathered data from nearly 500 developers using a VS Code extension, creating 540 problems across 5 natural languages and 2 programming languages. EDIT-bench tests models on diverse, context-dependent problems that require understanding user instructions, code context, highlighted code, and cursor position—reflecting how developers actually use AI coding assistants.
         </p>
       </div>
     </div>
@@ -269,26 +267,6 @@
 </section>
 <!-- End TLDR -->
 
-<!-- Key Takeaways -->
-<section class="section hero">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3 has-text-centered">Key Takeaways</h2>
-        <div class="content">
-          <ul style="font-size: 1.05rem;">
-            <li><strong>Real-world data:</strong> EDIT-bench is built from actual developer workflows, with user instructions and code contexts collected from 500 developers using our VS Code extension.</li>
-            <li><strong>Challenging benchmark:</strong> Only 3 out of 40 models achieve over 60% pass@1, with claude-sonnet-4 leading at 66.67%.</li>
-            <li><strong>Context matters:</strong> Model performance varies up to 11% depending on contextual information (highlighted code, cursor position), demonstrating the importance of realistic evaluation.</li>
-            <li><strong>Diverse problems:</strong> 545 problems spanning 5 natural languages (English, Spanish, Russian, Chinese, Portuguese), 2 programming languages (Python, JavaScript), and 4 edit categories (feature addition, modification, bug fixing, optimization).</li>
-            <li><strong>Model performance varies by task:</strong> Models excel at different problem categories—some are better at bug fixing (52.2% avg), while struggling with optimization (44.6% avg) and feature addition (39.6% avg).</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End key takeaways -->
 
 
 <!-- Leaderboard -->
@@ -297,7 +275,7 @@
     <div class="container is-max-desktop">
       <h2 class="title is-3 has-text-centered">EDIT-bench Leaderboard</h2>
       <p class="has-text-centered" style="margin-bottom: 2rem;">
-        Pass rates for LLMs on EDIT-bench. <strong>Core:</strong> 108 problems (subset) | <strong>Complete:</strong> 440 problems (full set). Higher is better.
+        Pass rates for LLMs on EDIT-bench. <strong>Core:</strong> 108 problems (subset) | <strong>Complete:</strong> 540 problems (full set). Higher is better.
       </p>
       <div class="table-container" style="max-height: 600px; overflow-y: auto; border: 1px solid #e5e7eb; border-radius: 8px;">
         <table class="table is-hoverable is-fullwidth" style="margin: 0;">
@@ -359,92 +337,13 @@
         </table>
       </div>
       <p class="has-text-centered" style="margin-top: 1.5rem; font-size: 0.9rem; color: #666;">
-        Full results: <a href="results-core.csv" style="color: #2563EB; font-weight: 600;">Core (108)</a> | <a href="results-complete.csv" style="color: #2563EB; font-weight: 600;">Complete (440)</a>
+        Full results: <a href="results-core.csv" style="color: #2563EB; font-weight: 600;">Core (108)</a> | <a href="results-complete.csv" style="color: #2563EB; font-weight: 600;">Complete (540)</a>
       </p>
     </div>
   </div>
 </section>
 <!-- End leaderboard -->
 
-
-
-
-<!-- What is EDIT-bench -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">What is EDIT-bench?</h2>
-      <div class="content has-text-justified" style="font-size: 1.05rem;">
-        <p>
-          <strong>EDIT-bench</strong> (Evaluation of Developer Instructed Tasks) is a benchmark for evaluating LLM code editing capabilities built on real-world edit contexts and instructions. Unlike existing benchmarks that rely on synthetic or educational-style problems, EDIT-bench is constructed from actual developer workflows.
-        </p>
-
-        <h3 class="title is-5" style="margin-top: 1.5rem; color: #2563EB;">Data Collection</h3>
-        <p>
-          We developed an open-source VS Code extension that mimics existing instructed code editing tools like GitHub Copilot and Cursor. Nearly 500 developers used this extension in their daily coding workflows, allowing us to collect realistic user instructions, code contexts, highlighted code segments, and cursor positions.
-        </p>
-
-        <h3 class="title is-5" style="margin-top: 1.5rem; color: #2563EB;">Key Features</h3>
-        <ul>
-          <li><strong>Context-dependent problems:</strong> Models must understand user instructions, code context, highlighted code, and cursor position—just like in real AI coding assistants.</li>
-          <li><strong>Diverse instructions:</strong> User instructions range from brief commands like "fix this" to detailed natural language descriptions or even raw error traces.</li>
-          <li><strong>Real-world complexity:</strong> Problems span 74 unique Python libraries and various application domains (frontend/backend, ML, algorithms).</li>
-          <li><strong>Multilingual:</strong> 5 natural languages (English, Spanish, Russian, Chinese, Portuguese) and 2 programming languages (Python, JavaScript).</li>
-          <li><strong>Multiple task categories:</strong> Feature addition (43%), feature modification (27%), bug fixing (22%), and code optimization (8%).</li>
-        </ul>
-
-        <h3 class="title is-5" style="margin-top: 1.5rem; color: #2563EB;">Benchmark Statistics</h3>
-        <p>
-          EDIT-bench consists of <strong>545 problems</strong> with human-written test harnesses. We assembled a team of 5 experienced programmers to create test cases that adhere to user intent and are generalizable to different implementations. Each problem underwent a two-stage review process to ensure quality.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End What is EDIT-bench -->
-
-
-<!-- How to Evaluate -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">How can I evaluate on EDIT-bench?</h2>
-      <div class="content" style="font-size: 1.05rem;">
-        <p class="has-text-justified">
-          To evaluate your model on EDIT-bench, please visit our GitHub repository and follow the detailed instructions in the README:
-        </p>
-
-        <div class="box" style="background-color: #F3F4F6; border-left: 4px solid #2563EB; margin-top: 1.5rem; text-align: center;">
-          <h4 class="title is-4" style="margin-bottom: 1.5rem; color: #2563EB;">
-            <span class="icon"><i class="fab fa-github"></i></span>
-            Get Started on GitHub
-          </h4>
-          <a href="https://github.com/waynchi/editbench" target="_blank" class="button is-large" style="background-color: #2563EB; color: white; font-weight: 600; padding: 1.5rem 3rem; border-radius: 8px;">
-            <span class="icon is-medium">
-              <i class="fab fa-github"></i>
-            </span>
-            <span>View Repository & README</span>
-          </a>
-          <p style="margin-top: 1.5rem; font-size: 0.95rem; color: #666;">
-            The README includes complete setup instructions, evaluation scripts, and submission guidelines.
-          </p>
-        </div>
-
-        <div class="content" style="margin-top: 2rem;">
-          <h4 class="title is-5" style="color: #1F2937;">What you'll find in the repository:</h4>
-          <ul style="font-size: 1rem;">
-            <li><strong>Complete benchmark dataset:</strong> All 545 EDIT-bench problems with test harnesses</li>
-            <li><strong>Evaluation scripts:</strong> Ready-to-use code for running your models</li>
-            <li><strong>Docker setup:</strong> Isolated testing environment configuration</li>
-            <li><strong>Submission guidelines:</strong> Instructions for adding your results to the leaderboard</li>
-            <li><strong>Documentation:</strong> Detailed guides for custom model integration</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End How to Evaluate -->
 
 
 
@@ -461,11 +360,14 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{editbench2026,
-  title={EDIT-bench: Evaluating LLM Abilities to Perform Real-World Instructed Code Edits},
-  author={Wayne Chi and Valerie Chen and Ryan Shar and Aditya Mittal and Jenny Liang and Wei-Lin Chiang and Anastasios Nikolas Angelopoulos and Ion Stoica and Graham Neubig and Ameet Talwalkar and Chris Donahue},
-  journal={Under review as a conference paper at ICLR 2026},
-  year={2026}
+      <pre id="bibtex-code"><code>@misc{chi2025editbenchevaluatingllmabilities,
+      title={EDIT-Bench: Evaluating LLM Abilities to Perform Real-World Instructed Code Edits},
+      author={Wayne Chi and Valerie Chen and Ryan Shar and Aditya Mittal and Jenny Liang and Wei-Lin Chiang and Anastasios Nikolas Angelopoulos and Ion Stoica and Graham Neubig and Ameet Talwalkar and Chris Donahue},
+      year={2025},
+      eprint={2511.04486},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2511.04486},
 }</code></pre>
     </div>
 </section>
@@ -477,7 +379,6 @@
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
